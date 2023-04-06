@@ -42,7 +42,7 @@ console.log(message);
 
 let ten = 10;
 console.log(ten * ten);
-*/
+
 
 // food prices
 let beerCost = 10;
@@ -52,9 +52,16 @@ let softdrinkCost = 15;
 // user's money
 let accountBalance = 30;
 
-function accountBalance() {
+function accountBalance(10, 15, 30) {
   accountBalance = accountBalance - beerCost - burgerCost - softdrinkCost;
   console.log(accountBalance);
 }
 
-drinkBeer(accountBalance);
+accountBalance();
+*/
+
+function addNumbers(a, b) {
+  return a + b;
+}
+
+console.log(addNumbers(2, 5));
