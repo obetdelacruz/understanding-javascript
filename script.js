@@ -118,4 +118,117 @@ const myArray = [
 const removedFromMyArray = myArray.pop();
 console.log(removedFromMyArray);
 console.log(myArray);
+
+//Manipulate Arrays With shift Method//
+
+
+const myArray = [["John", 23], ["dog", 3]];
+
+
+const removedFromMyArray = myArray.shift();
+console.log(removedFromMyArray);
+console.log(myArray);
+
+
+// Manipulate Arrays With unshift Method
+
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+
+myArray.unshift(["Paul",35]);
+console.log(myArray)
+
+
+//Shopping List
+
+const myList = [["back pack", 17],["pants", 20],["cake", 18],["bike", 50],["car", 100]];
+console.log (myList);
+
+// Write Reusable JavaScript with Functions //
+
+function reusableFunction() {
+  console.log("Hi World")
+}
+reusableFunction();
+
+
+// Passing Values to Functions with Arguments //
+function functionWithArgs(num1, num2){
+  console.log(num1 + num2);
+}
+functionWithArgs(1, 2);
+functionWithArgs(7, 9);
+
+
+
+//Return a Value from a Function with Return//
+function timesFive(num) {
+  return num * 5;
+}
+
+const product = timesFive(5);
+console.log(product);
+
+
+//Global Scope and Functions//
+
+Note! In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+
+Variables which are declared without the let or const keywords are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with let or const.
+
+Instruction: 
+Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
+
+Inside function fun1, assign 5 to oopsGlobal without using the var, let or const keywords.
+
+// Declare the myGlobal variable below this line
+let myGlobal = 10
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+oopsGlobal = 5
+}
+
+// Only change code above this line
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+// Local Scope and Functions //
+Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
+
+Here is a function myTest with a local variable called loc.
+
+function myTest() {
+  const loc = "foo";
+  console.log(loc);
+}
+
+myTest();
+console.log(loc);
+
+The myTest() function call will display the string foo in the console. The console.log(loc) line (outside of the myTest function) will throw an error, as loc is not defined outside of the function.
+
+The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
+
+Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
+
+function myLocalScope() {
+  // Only change code below this line
+  const myVar = "local";
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 */
