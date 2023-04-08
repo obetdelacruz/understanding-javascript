@@ -85,6 +85,12 @@ let user = {
 
 console.log("name" in user);
 
+//Modify Array Data with Indexes
+
+const myArray =[18, 04. 99];
+myArray[0] = 45;
+
+//Access Multi-Dimensional Arrays with Indexes//
 
 const arr = [
   [1, 2, 3],
@@ -96,10 +102,20 @@ const subarray = arr[3];
 const nestedSubarray = arr[3][0];
 const element = arr[3][0][1];
 
-*/
+
+// Manipulate Arrays with Push Method //
 
 const myName = ["Obet", "Jean", "Chris", ["Donald", 25]];
 myName.push(["Joshua", 37]);
 
-myName.splice[0];
-console.log(myName);
+
+//Manipulate Arrays with POP Method //
+
+const myArray = [
+  ["John", 27],
+  ["Ana", 30],
+];
+const removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray);
+console.log(myArray);
+*/
