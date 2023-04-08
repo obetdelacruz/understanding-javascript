@@ -58,10 +58,29 @@ function accountBalance(10, 15, 30) {
 }
 
 accountBalance();
-*/
+
 
 function addNumbers(a, b) {
   return a + b;
 }
 
 console.log(addNumbers(2, 5));
+
+
+const name = "Lobert";
+const age = 40;
+
+const person = {
+  name,
+  age,
+};
+
+console.log(person);
+*/
+
+let user = {
+  name: "john",
+  age: 30,
+};
+
+console.log("name" in user);
