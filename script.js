@@ -296,6 +296,8 @@ function addFive(){
 addThree();
 addFive();
 
+
+
 Assignment with a Returned Value
 If you'll recall from our discussion about Storing Values with the Assignment Operator, everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to a variable.
 
@@ -303,7 +305,7 @@ Assume we have defined a function sum which adds two numbers together.
 
 ourSum = sum(5, 12);
 
-Calling the sum function with the arguments of 5 and 12 produces a return value of 17. This return value is assigned to the ourSum variable.
+//Calling the sum function with the arguments of 5 and 12 produces a return value of 17. This return value is assigned to the ourSum variable.
 
 Call the processArg function with an argument of 7 and assign its return value to the variable processed.
 
@@ -317,29 +319,21 @@ function processArg(num) {
 // Only change code below this line
 processed = processArg(7);
 
+
+
 */
-let books = [
-  {
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    year: 1925,
-  },
-
-  {
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    year: 1960,
-  },
-
-  {
-    title: "1984",
-    author: "George Orwell",
-    year: 1949,
-  },
+let myArray = [
+  "apple",
+  "banana",
+  "orange",
+  "melon",
+  { name: "Alice", age: 30, profession: "teacher" },
+  { name: "Bob", age: 25, profession: "engineer" },
+  { name: "Charlie", age: 40, profession: "doctor" },
+  { name: "Dave", age: 22, profession: "student" },
 ];
 
-console.log(books[0].title);
-console.log(books[1]["year"]);
-
-console.log(books[3]["author"]);
-console.log(typeof books);
+console.log(myArray[4].profession, myArray[1]); // Output: "apple"
+console.log(
+  `My name is ${myArray[5].name}, and I love eating ${myArray[1]}. I want to be a ${myArray[6].profession} someday.`
+);
