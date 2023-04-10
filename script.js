@@ -387,7 +387,7 @@ function testEqual(val) {
 }
 
 console.log(testEqual(12));
-*/
+
 
 function testStrict(val) {
   if (val === 12) {
@@ -395,3 +395,23 @@ function testStrict(val) {
   } else return "Not Equal";
 }
 console.log(testStrict(12));
+
+
+function compareEquality(a, b) {
+  if (a === b) {
+    return "Equal";
+  }
+  return "not equal";
+}
+
+console.log(compareEquality(4, "4"));
+*/
+
+function testEqual(val) {
+  if (val != 99) {
+    return "not equal";
+  }
+  return "equal";
+}
+
+console.log(testEqual(99));
