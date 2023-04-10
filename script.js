@@ -358,10 +358,40 @@ function sumOfNumbers(a, b) {
   return a + b;
 }
 console.log(sumOfNumbers(4, 5));
-*/
+
 
 function productOfTwoNumbers(a, n) {
   return a * n;
 }
 
-console.log(productOfTwoNumbers(6, 5));
+console.log(productOfTwoNumbers(8, 5));
+
+
+
+function trueOrFalse(wasThatTrue) {
+  if (wasThatTrue) {
+    return "it was true";
+  }
+  return "it was false";
+}
+
+console.log(trueOrFalse(false));
+console.log(trueOrFalse(true));
+
+
+function testEqual(val) {
+  if (val === 12) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testEqual(12));
+*/
+
+function testStrict(val) {
+  if (val === 12) {
+    return "Equal";
+  } else return "Not Equal";
+}
+console.log(testStrict(12));
