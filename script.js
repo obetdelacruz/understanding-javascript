@@ -321,7 +321,6 @@ processed = processArg(7);
 
 
 
-*/
 let myArray = [
   "apple",
   "banana",
@@ -333,7 +332,36 @@ let myArray = [
   { name: "Dave", age: 22, profession: "student" },
 ];
 
+function getNames(arr) {
+  let names = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "object" && arr[i].hasOwnProperty("name")) {
+      names.push(arr[i].name);
+    }
+  }
+
+  return names;
+}
+
+console.log(getNames(myArray));
+/*
 console.log(myArray[4].profession, myArray[1]); // Output: "apple"
 console.log(
   `My name is ${myArray[5].name}, and I love eating ${myArray[1]}. I want to be a ${myArray[6].profession} someday.`
 );
+console.log(myArray.length);
+console.log(myArray);
+
+
+function sumOfNumbers(a, b) {
+  return a + b;
+}
+console.log(sumOfNumbers(4, 5));
+*/
+
+function productOfTwoNumbers(a, n) {
+  return a * n;
+}
+
+console.log(productOfTwoNumbers(6, 5));
