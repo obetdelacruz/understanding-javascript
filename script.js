@@ -405,7 +405,7 @@ function compareEquality(a, b) {
 }
 
 console.log(compareEquality(4, "4"));
-*/
+
 
 function testEqual(val) {
   if (val != 99) {
@@ -415,3 +415,25 @@ function testEqual(val) {
 }
 
 console.log(testEqual(99));
+
+
+function testNotequal(val) {
+  if (val !== 17) {
+    return "not equal";
+  }
+  return "equal";
+}
+
+console.log(testNotequal(17));
+
+const h1 = document.querySelector("h1");
+h1.style.background = "red";
+h1.addEventListener("click", function () {
+  h1.style.background = "none";
+});
+*/
+
+const h1 = document.querySelector("h1");
+function toggleBackground(element) {
+  element.classlist.toggle("background");
+}

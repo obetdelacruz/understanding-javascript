@@ -1,1 +1,4 @@
-# understanding-javascript
+declaing variable
+const
+let
+var
