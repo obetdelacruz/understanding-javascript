@@ -431,9 +431,45 @@ h1.style.background = "red";
 h1.addEventListener("click", function () {
   h1.style.background = "none";
 });
-*/
+
 
 const h1 = document.querySelector("h1");
 function toggleBackground(element) {
   element.classlist.toggle("background");
 }
+h1.addEventListener("click")
+
+const h1 = document.querySelector ()
+
+
+
+// Define an array of user objects
+const users = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Bob", age: 40 },
+];
+
+// Get a reference to the HTML element where we'll display the list
+const userList = document.getElementById("user-list");
+
+// Use a for loop to generate the HTML for each list item
+for (let i = 0; i < users.length; i++) {
+  const user = users[i];
+  const listItem = document.createElement("li");
+  listItem.textContent = user.name;
+  userList.appendChild(listItem);
+}
+*/
+function testGreaterThan(val) {
+  if (val > 100) {
+    return " over 100";
+  }
+
+  if (val > 10) {
+    return "over 10";
+  }
+  return "10 or under";
+}
+
+console.log(testGreaterThan(11));
