@@ -460,7 +460,7 @@ for (let i = 0; i < users.length; i++) {
   listItem.textContent = user.name;
   userList.appendChild(listItem);
 }
-*/
+
 function testGreaterThan(val) {
   if (val > 100) {
     return " over 100";
@@ -473,3 +473,23 @@ function testGreaterThan(val) {
 }
 
 console.log(testGreaterThan(11));
+
+
+function testLogicalAndOperator(val) {
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
+  return "No";
+}
+
+console.log(testLogicalAndOperator(100));
+
+*/
+
+function testLogicalOrOperator(num) {
+  if (num > 20 || num < 10) {
+    return "Outside";
+  }
+  return "inside";
+}
+console.log(testLogicalOrOperator(10));
