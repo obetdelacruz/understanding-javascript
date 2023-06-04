@@ -484,7 +484,7 @@ function testLogicalAndOperator(val) {
 
 console.log(testLogicalAndOperator(100));
 
-*/
+
 
 function testLogicalOrOperator(num) {
   if (num > 20 || num < 10) {
@@ -493,3 +493,64 @@ function testLogicalOrOperator(num) {
   return "inside";
 }
 console.log(testLogicalOrOperator(10));
+
+
+
+//  You can use prompt to get input from the user and pass it as an argument to the testElse function. The function will then evaluate the input and use alert to display a message to the user based on whether the input is greater than 5 or not.
+
+// Here's an example:
+
+//When you run this code, it will display a prompt box asking the user to enter a number. The input value will then be passed as an argument to the testElse function, which will evaluate the input and display a message using alert.
+
+//For example, if the user enters the number 6, the output will be "bigger than 5". If the user enters the number 4, the output will be "5 or smaller".
+
+function testElse(num) {
+  if (num > 5) {
+    alert("bigger than 5");
+  } else {
+    alert("5 or smaller");
+  }
+}
+
+let input;
+do {
+  input = prompt("Enter a number:");
+  if (input !== null && !isNaN(input)) {
+    testElse(input);
+    location.reload(); // refresh the page
+  }
+} while (input !== null);
+
+
+function convertTemperature() {
+  const toFarenheight = (farenheit) => (farenheit - 32) / 1.8;
+  const toCelcius = (celcius) => celcius * 1.8 + 32;
+
+  return { toFarenheight, toCelcius, };
+}
+
+console.log(convertTemperature)
+
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+
+console.log(testElseIf(20));
+
+
+addNumbers = (a, b) => {
+  return a + b;
+};
+console.log(addNumbers(7, 25));
+*/
+
+const name = "lobert";
+const firstName = name.charAt(0).toUpperCase() + name.slice(1);
+console.log(firstName);
